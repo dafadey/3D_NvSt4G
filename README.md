@@ -12,7 +12,7 @@ make test_flow
 ```
 Run 404 iterations:
 ```bash
-./test_flow 404
+LD_LIBRARY_PATH=./ ./test_flow 404
 ```
 
 Visual build:
@@ -21,5 +21,5 @@ make test_flow_draw
 ```
 Run:
 ```bash
-./test_flow_draw 404
+LD_LIBRARY_PATH=./ ./test_flow_draw 404
 ```

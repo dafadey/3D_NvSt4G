@@ -1,4 +1,3 @@
-#include "data_type.h"
 #include "nvst.h"
 #include "nvst_CPU.h"
 #include "timer.h"
@@ -202,7 +201,7 @@ int main(int argc, char** argv) {
       for(int id=0; id<h.np; id++)
         trajectories[id].push_back({h.host_particles[id], h.host_particles[id+h.np], h.host_particles[id+2*h.np]});
     }
-#ifndef SIMPLEDRAW
+#ifdef SIMPLEDRAW
     if(c%3)
       continue;
     h.get_data();
